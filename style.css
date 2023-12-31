@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://picsum.photos/1920/1080);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+#box {
+    width: 50vw;
+    height: 65vh;
+    background-color: gray;
+    border: 10px solid rgb(103, 153, 180);
+    /* border-radius: 30px; */
+    /* overflow: hidden; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    outline: none;
+    border: none;
+    scale: 2;
+    border: 2px solid rgb(107, 146, 192);
+    border-radius: 2px;
+}
+
+button:active {
+    scale: 1.8;
+}
+
+#left {
+    left: -2%;
+    background-color: rgb(134, 175, 223);
+}
+
+#right {
+    right: -2%;
+    background-color: rgb(134, 175, 223);
+}
